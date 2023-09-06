@@ -1,0 +1,183 @@
+* { padding: 0; margin: 0; font-size: 10px; font-family: Candara; box-sizing: border-box;}
+
+/* First Section */
+.container { height: 75vh; display: flex;}
+  .content { width: 100%; justify-content: center; height: auto; flex-direction: column; display: flex; color: #fff; background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("assets/design-interior.jpg"); align-items: center;}
+    .content h1 { margin-bottom: 3rem; font-size: 4rem;}
+    .content h6 { margin-bottom: 3.5rem; font-size: 1.7rem;}
+    .content .btn { width: 14rem; height: 4.8rem; font-size: 1.7rem; cursor: pointer; color: #fff; border-radius: 5rem; border: none; background-color: #1b3863;}
+    .content .btn:hover { border: none; background-color: #b48529;}
+    .content .btn:active { outline: 3px solid #7b5e20; color: #000; border: none; background-color: #ffca4f;}
+
+/* Banner Section */
+.banner-container { padding: 6rem 0; justify-content: center; display: flex; align-items: center;}
+    .banner-content h1 { margin-bottom: 3rem; font-size: 4rem; color: #1b3863;}
+    .banner-content h6 { margin-bottom: 3rem; font-size: 1.7rem;}
+    .banner-content p { width: 55rem; text-align: justify; line-height: 3rem; font-size: 1.7rem;}
+  .banner-img { width: 53rem; object-fit: cover; margin-left: 13rem; height: 48rem; border-radius: 4rem;}
+
+/* Services Section */
+.services { padding-bottom: 12rem; background-color: #f8f9fa;}
+  .services h1 { text-align: center; padding-top: 15rem; font-size: 4.4rem; display: block; color: #1b3863;}
+  .services-container { justify-content: center; flex-direction: row; display: flex;}
+    .services-content-one, .services-content-two, .services-content-three { width: 40rem; text-align: center; margin-top: 8rem; margin-right: 4rem;} .services-content-three { margin-right: 0;}
+      .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 3rem; color: #1b3863;}
+      .services-content-one p, .services-content-two p, .services-content-three p { line-height: 3rem; font-size: 1.7rem;}
+
+/* Hero Section */
+.hero-container { height: 38vh; display: flex;}
+  .hero-content { width:100%; justify-content: center; display: flex; color: #fff; background-size: cover; background-position: center; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("assets/fundalabout.jpg"); align-items: center;}
+    .hero-content h1 { text-align: center; font-size: 4rem;}
+
+/* Contact Section */
+.contact-container { position: relative; padding-top: 6rem; background-color: #f8f9fa;}
+  .contact-content { text-align: center; position: relative; padding-bottom: 3rem; right: 44rem; display: block;}
+    .contact-content h1 { padding-bottom: 1.5rem; font-size: 4.2rem;}
+    .contact-content p { padding-bottom: 2rem; font-size: 1.7rem;}
+    .contact-content a { font-size: 1.7rem; color: rgb(24, 110, 245);}
+    .contact-copyright .horizontal-line { height: 0.1rem; color:darkgray; border-width: 0; background-color:rgb(229,229,229);}
+    .contact-copyright .copyright { text-align: center; padding: 1.7rem 0; font-size: 1.7rem;}
+
+/* Responsive styles */
+@media screen and (max-width: 1399px) {
+  .banner-content p { width: 50rem;}
+  .banner-img { width: 43rem;}
+  .services-content-one, .services-content-two, .services-content-three { width: 36rem; margin-right: 3.4rem} .services-content-three { margin-right: 0;}
+  .hero-content h1 { width: 100rem; font-size: 3.8rem;}
+  .contact-content { right: 38rem;}}
+@media screen and (max-width: 1199px) {
+  .banner-content p { width: 40rem;}
+  .banner-img { width: 33rem;}
+  .services-content-one, .services-content-two, .services-content-three { width: 30rem; margin-right: 3.4rem} .services-content-three { margin-right: 0;}
+  .contact-content { right: 32rem;}}
+@media screen and (max-width: 991px) {
+  .banner-content h1 { width: 25rem;}
+  .banner-content p { width: 28rem;}
+  .banner-img { width: 23rem;}
+  .services-content-one, .services-content-two, .services-content-three { width: 23rem; margin-right: 2rem} .services-content-three { margin-right: 0;}
+  .hero-content h1 { width: 65rem; text-align: center; font-size: 3.6rem;}
+  .contact-content { right: 18rem;}}
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .container { height: 100vh;}
+  .banner-content h1 { width: 25rem;}
+  .banner-content p { width: 28rem;}
+  .banner-img { width: 23rem;}
+  .services-content-one, .services-content-two, .services-content-three { width: 23rem; margin-right: 2rem} .services-content-three { margin-right: 0;}
+  .hero-container { height: 80vh;}
+  .hero-content h1 { width: 65rem; text-align: center; font-size: 3.6rem;}
+  .contact-content { right: 18rem;}
+    .contact-content h1 { font-size: 3.6rem;}}
+@media screen and (max-width: 767px) {
+  .banner-container { flex-direction: column;}
+    .banner-content h1 { width: 40rem;}
+    .banner-content p { padding-bottom: 6rem; width: 45rem;}
+    .banner-img { width: 42rem; margin: auto;}
+  .services h1 { font-size: 3.6rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 53rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .hero-container { height: 38vh;}
+  .contact-content { left: 0;}}
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .container { height: 100vh;}
+    .content h1 { font-size: 3.6rem;}
+  .banner-container { flex-direction: column;}
+    .banner-content h1 { width: 40rem; font-size: 3.6rem;}
+    .banner-content p { padding-bottom: 6rem; width: 45rem;}
+    .banner-img { width: 42rem; margin: auto;}
+  .services h1 { font-size: 3.6rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 53rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { font-size: 2.6rem;}
+  .hero-container { height: 80vh;}
+    .hero-content h1 { text-align: center; font-size: 3.6rem;}
+  .contact-content { left: 0;}
+    .contact-content h1 { font-size: 3.4rem;}}
+@media screen and (max-width: 699px) {
+  .hero-content h1 { width: 55rem; font-size: 3.4rem;}}
+@media screen and (max-width: 699px) and (orientation: landscape) {
+  .content h1 { font-size: 3.4rem;}
+  .banner-content h1 { width: 40rem; font-size: 3.4rem;}
+  .services h1 { font-size: 3.4rem;}
+  .services-content-one h6, .services-content-two h6, .services-content-three h6 { font-size: 2.4rem;}
+  .hero-content h1 { width: 55rem; font-size: 2.8rem;}}
+@media screen and (max-width: 639px) {
+  .hero-content h1 { width: 50rem; font-size: 3rem;}}
+@media screen and (max-width: 575px) {
+  .banner-content p { max-width: 48rem;}
+  .banner-img { max-width: 100%; margin: auto;}
+  .hero-content h1 { width: 45rem; font-size: 2.8rem;}}
+@media screen and (max-width: 575px) and (orientation: landscape) {
+  .content h1 { font-size: 3.4rem;}
+  .banner-content h1 { width: 40rem; font-size: 3.4rem;}
+  .banner-content p { max-width: 48rem;}
+  .banner-img { max-width: 100%; margin: auto;}
+  .services h1 { font-size: 3.4rem;}
+  .hero-content h1 { width: 45rem; font-size: 2.8rem;}
+  .contact-content h1 { font-size: 3.2rem;}}
+@media screen and (max-width: 549px) {
+  .content h1 { font-size: 3.6rem;}
+  .services h1 { font-size: 3.6rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 48rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .contact-content h1 { font-size: 3.8rem;}
+  .contact-content p { font-size: 1.7rem;}}
+@media screen and (max-width: 509px) {
+  .banner-content h1 { width: 40rem; font-size: 3.6rem;}
+  .banner-content p { width: 42rem;}
+  .banner-img { width: 40rem; margin: auto;}
+  .services h1 { text-align: center; font-size: 3.6rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 44rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .hero-content h1 { width: 42rem; font-size: 2.6rem;}
+  .contact-content h1 { font-size: 3.4rem;}
+  .contact-content p { font-size: 1.7rem;}}
+@media screen and (max-width: 469px) {
+  .content h1 { width: 30rem; text-align: center; font-size: 3.2rem;}
+  .banner-content p { width: 39rem;}
+  .banner-img { width: 38rem; margin: auto;}
+  .services h1 { text-align: center; font-size: 3.2rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 38rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .hero-content h1 { width: 39rem; font-size: 2.6rem;}
+  .contact-content h1 { font-size: 3.2rem;}
+  .contact-content p { font-size: 1.7rem;}}
+@media screen and (max-width: 429px) {
+  .content h1 { margin-bottom: 3rem; font-size: 3.2rem;}
+  .banner-content h1 { width: 32rem; font-size: 3.2rem;}
+  .banner-content p { margin: auto; width: 34rem;}
+  .banner-img { width: 34rem; margin: auto;}
+  .services h1 { text-align: center; font-size: 3.2rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 34rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .hero-content h1 { width: 34rem; font-size: 2.6rem;}
+  .contact-content h1 { font-size: 3rem;}
+  .contact-content p { font-size: 1.7rem;}}
+@media screen and (max-width: 369px) {
+  .content h1 { width: 30rem; text-align: center; font-size: 3.2rem;}
+  .banner-content h1 { width: 28rem; font-size: 3rem;}
+  .banner-content p { margin: auto; width: 28rem;}
+  .banner-img { width: 28rem; margin: auto;}
+  .services h1 { text-align: center; font-size: 3.2rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 28rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .hero-content h1 { width: 28rem; font-size: 2.4rem;}
+  .contact-content h1 { font-size: 2.8rem;}
+  .contact-content p { font-size: 1.7rem;}}
+@media screen and (max-width: 309px) {
+  .content h1 { width: 28rem; text-align: center; font-size: 3.2rem;}
+  .banner-content h1 { width: 24rem; font-size: 3rem;}
+  .banner-content p { margin: auto; width: 24rem;}
+  .banner-img { width: 24rem; margin: auto;}
+  .services h1 { text-align: center; font-size: 3.2rem;}
+  .services-container { flex-direction: column; align-items: center;}
+    .services-content-one, .services-content-two, .services-content-three { width: 24rem; margin-right: 0;} .services-content-three { margin-right: 0;}
+    .services-content-one h6, .services-content-two h6, .services-content-three h6 { padding-bottom: 2rem; font-size: 2.6rem;}
+  .hero-content h1 { width: 24rem; font-size: 2rem;}
+  .contact-content h1 { font-size: 2.8rem;}
+  .contact-content p { font-size: 1.7rem;}}
